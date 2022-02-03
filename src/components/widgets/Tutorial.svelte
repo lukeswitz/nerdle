@@ -15,29 +15,32 @@
 <div class:complete={visible} class="examples">
 	<div><strong>Examples</strong></div>
 	<div class="row">
-		<Tile value="s" state="🟩" />
+		<Tile value="f" state="🟩" />
+		<Tile value="r" state="🔳" />
+		<Tile value="o" state="🔳" />
+		<Tile value="s" state="🔳" />
+		<Tile value="t" state="🔳" />
+		<Tile value="s" state="🔳" />
+	</div>
+	<div>The letter <strong>F</strong> is in the word and in the correct spot.</div>
+	<div class="row">
+		<Tile value="f" state="🔳" />
+		<Tile value="r" state="🟨" />
+		<Tile value="e" state="🔳" />
 		<Tile value="a" state="🔳" />
+		<Tile value="k" state="🔳" />
+		<Tile value="s" state="🔳" />
+	</div>
+	<div>The letter <strong>O</strong> is in the word but in the wrong spot.</div>
+	<div class="row">
 		<Tile value="b" state="🔳" />
 		<Tile value="r" state="🔳" />
+		<Tile value="i" state="🔳" />
+		<Tile value="d" state="⬛" />
+		<Tile value="g" state="🔳" />
 		<Tile value="e" state="🔳" />
 	</div>
-	<div>The letter <strong>S</strong> is in the word and in the correct spot.</div>
-	<div class="row">
-		<Tile value="b" state="🔳" />
-		<Tile value="i" state="🟨" />
-		<Tile value="l" state="🔳" />
-		<Tile value="l" state="🔳" />
-		<Tile value="s" state="🔳" />
-	</div>
-	<div>The letter <strong>I</strong> is in the word but in the wrong spot.</div>
-	<div class="row">
-		<Tile value="s" state="🔳" />
-		<Tile value="n" state="🔳" />
-		<Tile value="o" state="🔳" />
-		<Tile value="w" state="⬛" />
-		<Tile value="y" state="🔳" />
-	</div>
-	<div>The letter <strong>W</strong> is not in the word in any spot.</div>
+	<div>The letter <strong>D</strong> is not in the word in any spot.</div>
 </div>
 <div>
 	Open the settings menu to see some of the additional features.
