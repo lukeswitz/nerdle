@@ -1,3 +1,4 @@
+[![Publish](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml/badge.svg)](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml)
 #### Six-letter word guessing game I made for my mom. 
 
 ### Additional Features
