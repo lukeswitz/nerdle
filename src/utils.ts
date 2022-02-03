@@ -65,7 +65,7 @@ export function getRowData(n: number, board: GameBoard) {
 
 export function getState(word: string, guess: string): LetterState[] {
 	const charArr = word.split("");
-	const result = Array<LetterState>(5).fill("⬛");
+	const result = Array<LetterState>(6).fill("⬛");
 	for (let i = 0; i < word.length; ++i) {
 		if (charArr[i] === guess.charAt(i)) {
 			result[i] = "🟩";
@@ -141,7 +141,7 @@ export function seededRandomInt(min: number, max: number, seed: number) {
 export const DELAY_INCREMENT = 100;
 
 export const PRAISE = [
-	"F*cking Genius",
+	"Genius",
 	"Magnificent",
 	"Impressive",
 	"Splendid",
