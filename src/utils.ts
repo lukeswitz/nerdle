@@ -8,7 +8,7 @@ export const COLS = 6;
 export const words = {
 	...wordList,
 	contains: (word: string) => {
-		return wordList.words.includes(word) || wordList.valid.includes(word);
+		return wordList.words.includes(word);
 	},
 };
 
