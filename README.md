@@ -1,4 +1,4 @@
-#### Six-letter word guessing game
+#### Six-letter word guessing game I made for my mom. 
 
 ### Additional Features
 
