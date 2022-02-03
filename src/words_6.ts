@@ -1,6 +1,6 @@
 const words = {
 	"words": [
-				"abacus",
+		"abacus",
 		"abbots",
 		"abduct",
 		"ablaze",
