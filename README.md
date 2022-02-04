@@ -1,8 +1,9 @@
 [![Publish](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml/badge.svg)](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml)
-
 <img src="https://img.shields.io/github/package-json/v/lukeswitz/nerdle" alt="GitHub package.json version" />
 
-A six-letter word guessing game. Open an issue to add/remove suggested words
+#### A six-letter word guessing game.
+
+Open an issue to add/remove words
 
 ##### Tracker removed, letter added. 
 
