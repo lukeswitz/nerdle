@@ -1,5 +1,10 @@
 [![Publish](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml/badge.svg)](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml)
-#### Six-letter word guessing game I made for my mom. 
+
+<img src="https://img.shields.io/github/package-json/v/lukeswitz/nerdle" alt="GitHub package.json version" />
+
+A six-letter word guessing game
+
+##### Tracker removed, letter added. 
 
 ### Additional Features
 
