@@ -30,7 +30,7 @@
 	$: reset($mode);
 </script>
 
-<h4>Next Swordle</h4>
+<h4>Next Nerdle:</h4>
 <div class="container">
 	{#if ms > 0}
 		<div transition:blur class="timer">
