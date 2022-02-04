@@ -1,7 +1,7 @@
 {
   "name": "nerdle",
   "description": "A remake of the popular game with six letters.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": "true",
   "scripts": {
     "build": "rollup -c",

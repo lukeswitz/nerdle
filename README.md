@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/github/package-json/v/lukeswitz/nerdle" alt="GitHub package.json version" />
 
-A six-letter word guessing game
+A six-letter word guessing game. Open an issue to add/remove suggested words
 
 ##### Tracker removed, letter added. 
 
