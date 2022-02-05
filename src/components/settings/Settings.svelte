@@ -25,7 +25,7 @@
 			$settings.colorblind
 				? root.classList.add("colorblind")
 				: root.classList.remove("colorblind");
-			localStorage.setItem("settings", JSON.stringify($settings));
+			localStorage.setItem("nerdsettings", JSON.stringify($settings));
 		}
 	}
 </script>
@@ -58,12 +58,16 @@
 			<span slot="title">Game Mode</span>
 			<span slot="desc">The game mode determines how often the word refreshes</span>
 		</Setting>
+                <div class="links">
+			<a href="https://github.com/lukeswitz/nerdle" target="_blank">Hosted on GitHub by @lukeswitz</a>
+			<a href="https://github.com/lukeswitz/nerdle/issues" target="_blank">Report a Problem / Request a feature or word</a>
+		</div>
 		<Tips index={tip} />
 	</div>
 	<div class="footer">
 
 		<div>
-			<div>v1.0.0</div>
+			<div>v1.2.0</div>
 			<div
 				class="word"
 				on:contextmenu|preventDefault={() => {
@@ -85,7 +89,7 @@
 		justify-content: space-between;
 	}
 	.links {
-		font-size: var(--fs-medium);
+		font-size: var(--fs-small);
 		border-bottom: 1px solid var(--border-primary);
 		color: var(--fg-secondary);
 		display: flex;
@@ -94,10 +98,9 @@
 	.footer {
 		color: var(--fg-secondary);
 		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		text-align: end;
-	}
+		justify-content: center;
+		text-align: center;
+        }
 	:global(.settings-top > div) {
 		padding: 16px 0;
 		border-bottom: 1px solid var(--border-primary);

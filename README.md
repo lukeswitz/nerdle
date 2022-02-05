@@ -1,13 +1,12 @@
 [![Publish](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml/badge.svg)](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml)
 <img src="https://img.shields.io/github/package-json/v/lukeswitz/nerdle" alt="GitHub package.json version" />
 
-#### A six-letter word guessing game.
+**A Six-Letter Word 🧩 Game**
 
-Open an issue to add/remove words
-
-##### Tracker removed, letter added. 
-
-### Additional Features
+- Private: No logging or data collected on this end, game data is stored in the browser.    
+- Adaptive: Open an issue to add/remove words and with any other suggestions or bugs. 
+ 
+### Nerdle Features
 
 - Words are chosen from the list of words at random instead of in sequence, and the solution is not stored in localStorage, making it harder to cheat. The seed for the random number is created from the date, ensuring that everyone gets the same random number, so people can still compare answers for daily & hourly games.
 - When you complete a game the definition of the word is shown on the end of game modal.

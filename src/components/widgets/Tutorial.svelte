@@ -20,18 +20,18 @@
 		<Tile value="o" state="🔳" />
 		<Tile value="s" state="🔳" />
 		<Tile value="t" state="🔳" />
-		<Tile value="s" state="🔳" />
+		<Tile value="y" state="🔳" />
 	</div>
 	<div>The letter <strong>F</strong> is in the word and in the correct spot.</div>
 	<div class="row">
 		<Tile value="f" state="🔳" />
-		<Tile value="r" state="🟨" />
-		<Tile value="e" state="🔳" />
-		<Tile value="a" state="🔳" />
-		<Tile value="k" state="🔳" />
-		<Tile value="s" state="🔳" />
+		<Tile value="a" state="🟨" />
+		<Tile value="b" state="🔳" />
+		<Tile value="r" state="🔳" />
+		<Tile value="i" state="🔳" />
+		<Tile value="c" state="🔳" />
 	</div>
-	<div>The letter <strong>O</strong> is in the word but in the wrong spot.</div>
+	<div>The letter <strong>A</strong> is in the word but in the wrong spot.</div>
 	<div class="row">
 		<Tile value="b" state="🔳" />
 		<Tile value="r" state="🔳" />

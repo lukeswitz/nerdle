@@ -90,11 +90,11 @@ export function newSeed(mode: GameMode) {
 	const today = new Date();
 	switch (mode) {
 		case GameMode.daily:
-			return new Date(today.getFullYear(), today.getMonth(), today.getDate()).valueOf();
+			return new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()).valueOf();
 		case GameMode.hourly:
-			return new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours()).valueOf();
+			return new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours()).valueOf();
 		case GameMode.infinite:
-			return new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), today.getSeconds()).valueOf();
+			return new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds()).valueOf();
 	}
 }
 
@@ -104,7 +104,7 @@ export const modeData: ModeData = {
 		{
 			name: "Daily",
 			unit: 86400000,
-			start: 1642070400000,	// 
+			start: 1642370400000, // 17/01/2022
 			seed: newSeed(GameMode.daily),
 			historical: false,
 			streak: true,
@@ -112,7 +112,7 @@ export const modeData: ModeData = {
 		{
 			name: "Hourly",
 			unit: 3600000,
-			start: 16425628800000,	// 
+			start: 1642528800000, // 18/01/2022 8:00pm
 			seed: newSeed(GameMode.hourly),
 			historical: false,
 			icon: "m50,7h100v33c0,40 -35,40 -35,60c0,20 35,20 35,60v33h-100v-33c0,-40 35,-40 35,-60c0,-20 -35,-20 -35,-60z",
@@ -138,10 +138,10 @@ export function seededRandomInt(min: number, max: number, seed: number) {
 	return Math.floor(min + (max - min) * rng());
 }
 
-export const DELAY_INCREMENT = 100;
+export const DELAY_INCREMENT = 200;
 
 export const PRAISE = [
-	"Genius",
+	"Genius!",
 	"Magnificent",
 	"Impressive",
 	"Splendid",
