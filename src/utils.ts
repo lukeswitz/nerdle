@@ -8,7 +8,7 @@ export const COLS = 6;
 export const words = {
 	...wordList,
 	contains: (word: string) => {
-		return wordList.words.includes(word);
+		return wordList.words.includes(word)|| wordList.valid.includes(word);
 	},
 };
 
@@ -72,7 +72,13 @@ export function getState(word: string, guess: string): LetterState[] {
 			charArr[i] = "$";
 		}
 	}
-	return result.map((e, i) => charArr.includes(guess[i]) && e !== "🟩" ? "🟨" : e);
+	for (let i = 0; i < word.length; ++i) {
+ 		if (charArr.includes(guess.charAt(i)) && result[i] !== "🟩") {
+ 			result[i] = "🟨";
+ 			charArr[charArr.indexOf(guess.charAt(i))] = "$";
+ 		}
+ 	}    
+ 	return result;
 }
 
 export function contractNum(n: number) {
@@ -90,11 +96,11 @@ export function newSeed(mode: GameMode) {
 	const today = new Date();
 	switch (mode) {
 		case GameMode.daily:
-			return new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()).valueOf();
+			return new Date(today.getFullYear(), today.getMonth(), today.getDate()).valueOf();
 		case GameMode.hourly:
-			return new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours()).valueOf();
+			return new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours()).valueOf();
 		case GameMode.infinite:
-			return new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds()).valueOf();
+			return new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), today.getSeconds()).valueOf();
 	}
 }
 
@@ -104,7 +110,7 @@ export const modeData: ModeData = {
 		{
 			name: "Daily",
 			unit: 86400000,
-			start: 1642370400000, // 17/01/2022
+			start: 1642370400000,	// 17/01/2022
 			seed: newSeed(GameMode.daily),
 			historical: false,
 			streak: true,
@@ -112,7 +118,7 @@ export const modeData: ModeData = {
 		{
 			name: "Hourly",
 			unit: 3600000,
-			start: 1642528800000, // 18/01/2022 8:00pm
+			start: 1642528800000,	// 18/01/2022 8:00pm
 			seed: newSeed(GameMode.hourly),
 			historical: false,
 			icon: "m50,7h100v33c0,40 -35,40 -35,60c0,20 35,20 35,60v33h-100v-33c0,-40 35,-40 35,-60c0,-20 -35,-20 -35,-60z",
@@ -138,7 +144,7 @@ export function seededRandomInt(min: number, max: number, seed: number) {
 	return Math.floor(min + (max - min) * rng());
 }
 
-export const DELAY_INCREMENT = 200;
+export const DELAY_INCREMENT = 150;
 
 export const PRAISE = [
 	"Genius!",

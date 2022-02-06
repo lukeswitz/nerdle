@@ -8,7 +8,7 @@
  
 ### Nerdle Features
 
-- Words are chosen from the list of words at random instead of in sequence, and the solution is not stored in localStorage, making it harder to cheat. The seed for the random number is created from the date, ensuring that everyone gets the same random number, so people can still compare answers for daily & hourly games.
+- Words are chosen from the list of words at random instead of in sequence, and the solution is not stored in localStorage, making it harder to cheat.
 - When you complete a game the definition of the word is shown on the end of game modal.
 - In addition to the other statistics, your average guesses and your losses are also displayed.
 - When the timer reaches 0 for a given game mode it changes into a refresh button instead of staying at 00:00:00.

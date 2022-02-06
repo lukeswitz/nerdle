@@ -67,7 +67,7 @@
 	<div class="footer">
 
 		<div>
-			<div>v1.2.0</div>
+			<div>v1.2.1</div>
 			<div
 				class="word"
 				on:contextmenu|preventDefault={() => {
@@ -92,6 +92,7 @@
 		font-size: var(--fs-small);
 		border-bottom: 1px solid var(--border-primary);
 		color: var(--fg-secondary);
+		text-align: center;
 		display: flex;
 		justify-content: space-between;
 	}
