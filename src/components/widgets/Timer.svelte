@@ -27,35 +27,6 @@
 		}, SECOND);
 	}
 	$: reset($mode);
-<script lang="ts">
-	import { createEventDispatcher, onDestroy } from "svelte";
-
-	import type { GameMode } from "../../enums";
-	import { mode } from "../../stores";
-	import { modeData } from "../../utils";
-
-	const dispatch = createEventDispatcher();
-
-	const HOUR = 3600000;
-	const MINUTE = 60000;
-	const SECOND = 1000;
-	let ms = 1000;
-
-	let countDown: number;
-
-	export function reset(m: GameMode) {
-		clearInterval(countDown);
-		ms = modeData.modes[m].unit - (new Date().valueOf() - modeData.modes[m].seed);
-		if (ms < 0) dispatch("timeup");
-		countDown = setInterval(() => {
-			ms = modeData.modes[m].unit - (new Date().valueOf() - modeData.modes[m].seed);
-			if (ms < 0) {
-				clearInterval(countDown);
-				dispatch("timeup");
-			}
-		}, SECOND);
-	}
-	$: reset($mode);
 </script>
 
 <h3>Next wordle</h3>
