@@ -1600,7 +1600,6 @@ const words = {
 		"morgan",
 		"bottle",
 		"honest",
-		"labour",
 		"nurses",
 		"matzah",
 		"humbug",
