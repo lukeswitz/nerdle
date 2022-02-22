@@ -175,9 +175,9 @@ export function newSeed(mode: GameMode) {
 		case GameMode.daily:
 			return new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate())).valueOf();
 		case GameMode.hourly:
-			return new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours())).valueOf();
+			return new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours()).valueOf();
 		case GameMode.infinite:
-			return new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), today.getSeconds())).valueOf();
+			return new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), today.getSeconds()).valueOf();
 	}
 }
 
