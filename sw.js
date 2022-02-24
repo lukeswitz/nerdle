@@ -1,5 +1,5 @@
 // Increase the v number when the app is updated
-const cacheName = "nerdle-v1.2.1";
+const cacheName = "nerdle-v1.2.2";
 
 const assetsToCache = [
 	"./",
