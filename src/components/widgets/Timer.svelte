@@ -11,15 +11,20 @@
 	const MINUTE = 60000;
 	const SECOND = 1000;
 	let ms = 1000;
-
 	let countDown: number;
 
 	export function reset(m: GameMode) {
 		clearInterval(countDown);
-		ms = modeData.modes[m].unit - (new Date().valueOf() - modeData.modes[m].seed - (new Date().getTimezoneOffset() * 60000));
+		ms =
+			modeData.modes[m].unit -
+			(new Date().valueOf() - modeData.modes[m].seed) +
+			new Date().getTimezoneOffset() * 60000;
 		if (ms < 0) dispatch("timeup");
 		countDown = setInterval(() => {
-			ms = modeData.modes[m].unit - (new Date().valueOf() - modeData.modes[m].seed - (new Date().getTimezoneOffset() * 60000));
+			ms =
+				modeData.modes[m].unit -
+				(new Date().valueOf() - modeData.modes[m].seed) +
+				new Date().getTimezoneOffset() * 60000;
 			if (ms < 0) {
 				clearInterval(countDown);
 				dispatch("timeup");

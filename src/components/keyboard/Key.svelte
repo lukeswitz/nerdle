@@ -23,13 +23,13 @@
 		display: grid;
 		place-items: center;
 		flex: 1;
-		transition: background-color 0.2s ease-in-out;
+		transition: background-color 0.3s ease-in-out;
 	}
 	:global(.guesses) div {
 		transition-delay: 1s;
 	}
 	:global(.guesses .preventChange) div {
-		transition-duration: 0.20s;
+		transition-duration: 0.15s;
 		transition-delay: 0s;
 		background: var(--key-bg) !important;
 	}

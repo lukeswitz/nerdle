@@ -1,12 +1,12 @@
 {
   "name": "nerdle",
-  "description": "A remake of the popular game with six letters.",
-  "version": "1.2.2",
+  "description": "A word game with features.",
+  "version": "1.2.3",
   "private": "true",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
+    "start": "sirv public --no-clear --host",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "repository": {
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/lukeswitz/nerdle.git"
   },
   "keywords": [],
-  "author": "forked from MikahD repo with five letters",
+  "author": "lukeswitz",
   "bugs": {
     "url": "https://github.com/lukeswitz/nerdle/issues"
   },
