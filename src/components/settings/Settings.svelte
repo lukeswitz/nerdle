@@ -20,7 +20,7 @@
 			$settings.colorblind
 				? root.classList.add("colorblind")
 				: root.classList.remove("colorblind");
-			localStorage.setItem("nerdsettings", JSON.stringify($nerdsettings));
+			localStorage.setItem("nerdsettings", JSON.stringify($settings));
 		}
 	}
 </script>
