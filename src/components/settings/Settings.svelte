@@ -3,15 +3,10 @@
 
 	import { mode, settings } from "../../stores";
 	import { modeData } from "../../utils";
-	import { Tips, Toaster } from "../widgets";
+	import type { Toaster } from "../widgets";
 	import Setting from "./Setting.svelte";
 
-	export let validHard: boolean;
-	export let visible: boolean;
-	export let wordNumber: number;
-	let tip = 0;
-
-	$: if (visible) tip = Math.floor(10 * Math.random());
+	export let state: GameState;
 
 	const toaster = getContext<Toaster>("toaster");
 
@@ -25,7 +20,7 @@
 			$settings.colorblind
 				? root.classList.add("colorblind")
 				: root.classList.remove("colorblind");
-			localStorage.setItem("nerdsettings", JSON.stringify($settings));
+			localStorage.setItem("settings", JSON.stringify($settings));
 		}
 	}
 </script>
@@ -37,12 +32,12 @@
 		<h3>settings</h3>
 		<div
 			on:click={() => {
-				if (!validHard) {
+				if (!state.validHard) {
 					toaster.pop("Game has already violated hard mode");
 				}
 			}}
 		>
-			<Setting type="switch" bind:value={$settings.hard[$mode]} disabled={!validHard}>
+			<Setting type="switch" bind:value={$settings.hard[$mode]} disabled={!state.validHard}>
 				<span slot="title">Hard Mode</span>
 				<span slot="desc">Any revealed hints must be used in subsequent guesses</span>
 			</Setting>
@@ -58,50 +53,26 @@
 			<span slot="title">Game Mode</span>
 			<span slot="desc">The game mode determines how often the word refreshes</span>
 		</Setting>
-                <div class="links">
-			<a href="https://github.com/lukeswitz/nerdle" target="_blank">Hosted on GitHub by @lukeswitz</a>
-			<a href="https://github.com/lukeswitz/nerdle/issues" target="_blank">Report a Problem / Request a feature or word</a>
-		</div>
-		<Tips index={tip} />
-	</div>
-	<div class="footer">
-
-		<div>
-			<div>v1.2.2</div>
-			<div
-				class="word"
-				on:contextmenu|preventDefault={() => {
-					localStorage.clear();
-					toaster.pop("localStorage cleared");
-				}}
-			>
-				{modeData.modes[$mode].name} word #{wordNumber}
-			</div>
+		<div class="links">
+			<a href="https://github.com/lukeswitz/wordguess" target="_blank">Check the code</a>
+			<a href="https://github.com/lukeswitz/wordguess/issues" target="_blank">Report a Bug</a>
 		</div>
 	</div>
 </div>
 
 <style>
 	.outer {
-		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 	.links {
-		font-size: var(--fs-small);
+		font-size: var(--fs-medium);
 		border-bottom: 1px solid var(--border-primary);
 		color: var(--fg-secondary);
-		text-align: center;
 		display: flex;
 		justify-content: space-between;
 	}
-	.footer {
-		color: var(--fg-secondary);
-		display: flex;
-		justify-content: center;
-		text-align: center;
-        }
 	:global(.settings-top > div) {
 		padding: 16px 0;
 		border-bottom: 1px solid var(--border-primary);

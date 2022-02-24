@@ -3,14 +3,16 @@
 	const tips = [
 		"You can change the gamemode by clicking wordle+.",
 		"Hard mode is game mode specific. Turning it on in one game mode won't change it on the others.",
-		"Right click or double tap a word on the board to learn its definition.",
+		"Double tap or right click a word on the board to learn its definition.",
 		"Hard mode can be enabled during a game if you haven't violated the hard mode rules yet.",
-		"Right click or double tap the next row to see how many possible words can be played there, if you use all the previous information.",
+		"Double tap or right click the next row to see how many possible words can be played there, if you use all the previous information.",
 		"Because words are chosen from the list randomly it is possible to get the same word again.",
 		"When you see the refresh button in the top left corner it means a new word is ready.",
-		"Everyone gets the same words.",
+		"Everyone has the same wordle at the same time. Your word #73 is the same as everyone elses #73.",
+		"There are more valid guesses than possible words, ie. not all 5 letter words can be selected as an answer by the game.",
 		"Historical games don't count towards your stats. Historical games are when you follow a link to a specific game number.",
 	];
+	export const length = tips.length;
 </script>
 
 <div class="outer">
@@ -36,7 +38,7 @@
 
 <style lang="scss">
 	.outer {
-		margin: 20px auto;
+		margin: 15px auto;
 		padding: 10px 20px;
 		max-width: calc(0.6 * var(--game-width));
 		border: solid 1px var(--border-secondary);

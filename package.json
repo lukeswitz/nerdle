@@ -1,24 +1,24 @@
 {
-  "name": "nerdle",
-  "description": "A remake of the popular game with six letters.",
-  "version": "1.2.2",
+  "name": "swordle",
+  "description": "A remake of the popular game with additional modes and features.",
+  "version": "1.2.0",
   "private": "true",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
+    "start": "sirv public --no-clear --host",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukeswitz/nerdle.git"
+    "url": "git+https://github.com/lukeswitz/wordguess.git"
   },
   "keywords": [],
-  "author": "forked from MikahD repo with five letters",
+  "author": "lukeswitz",
   "bugs": {
-    "url": "https://github.com/lukeswitz/nerdle/issues"
+    "url": "https://github.com/lukeswitz/wordguess/issues"
   },
-  "homepage": "https://github.com/lukeswitz/nerdle#readme",
+  "homepage": "https://github.com/lukeswitz/wordguess#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
