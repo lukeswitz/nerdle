@@ -75,7 +75,7 @@
 	}
 	.front {
 		border: 2px solid var(--border-primary);
-		transform: rotateX(0deg);
+		transform: rotateY(0deg);
 		color: var(--fg-primary);
 	}
 	.back {

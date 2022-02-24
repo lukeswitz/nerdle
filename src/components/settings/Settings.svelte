@@ -20,7 +20,7 @@
 			$settings.colorblind
 				? root.classList.add("colorblind")
 				: root.classList.remove("colorblind");
-			localStorage.setItem("settings", JSON.stringify($settings));
+			localStorage.setItem("nerdsettings", JSON.stringify($nerdsettings));
 		}
 	}
 </script>
@@ -54,8 +54,8 @@
 			<span slot="desc">The game mode determines how often the word refreshes</span>
 		</Setting>
 		<div class="links">
-			<a href="https://github.com/lukeswitz/wordguess" target="_blank">Check the code</a>
-			<a href="https://github.com/lukeswitz/wordguess/issues" target="_blank">Report a Bug</a>
+			<a href="https://github.com/lukeswitz/nerdle" target="_blank">Check the code</a>
+			<a href="https://github.com/lukeswitz/nerdle/issues" target="_blank">Report a Bug</a>
 		</div>
 	</div>
 </div>

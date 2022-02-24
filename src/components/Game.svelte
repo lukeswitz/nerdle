@@ -116,7 +116,7 @@
 				if (stats.streak > stats.maxStreak) stats.maxStreak = stats.streak;
 			}
 			stats.lastGame = modeData.modes[$mode].seed;
-			localStorage.setItem(`stats-${$mode}`, JSON.stringify(stats));
+			localStorage.setItem(`nerdstats-${$mode}`, JSON.stringify(stats));
 		}
 	}
 
@@ -129,7 +129,7 @@
 			++stats.played;
 			if ("streak" in stats) stats.streak = 0;
 			stats.lastGame = modeData.modes[$mode].seed;
-			localStorage.setItem(`stats-${$mode}`, JSON.stringify(stats));
+			localStorage.setItem(`nerdstats-${$mode}`, JSON.stringify(stats));
 		}
 	}
 

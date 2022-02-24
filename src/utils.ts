@@ -1,9 +1,9 @@
 import seedrandom from "seedrandom";
 import { GameMode } from "./enums";
-import wordList from "./words_5";
+import wordList from "./words_6";
 
 export const ROWS = 6;
-export const COLS = 5;
+export const COLS = 6;
 
 export const words = {
 	...wordList,
@@ -141,7 +141,7 @@ function countOccurences<T>(arr: T[], val: T) {
 
 export function getState(word: string, guess: string): LetterState[] {
 	const charArr = word.split("");
-	const result = Array<LetterState>(5).fill("⬛");
+	const result = Array<LetterState>(6).fill("⬛");
 	for (let i = 0; i < word.length; ++i) {
 		if (charArr[i] === guess.charAt(i)) {
 			result[i] = "🟩";

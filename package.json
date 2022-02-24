@@ -1,7 +1,7 @@
 {
-  "name": "swordle",
-  "description": "A remake of the popular game with additional modes and features.",
-  "version": "1.2.0",
+  "name": "nerdle",
+  "description": "A word game with features.",
+  "version": "1.2.3",
   "private": "true",
   "scripts": {
     "build": "rollup -c",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukeswitz/wordguess.git"
+    "url": "git+https://github.com/lukeswitz/nerdle.git"
   },
   "keywords": [],
   "author": "lukeswitz",
   "bugs": {
-    "url": "https://github.com/lukeswitz/wordguess/issues"
+    "url": "https://github.com/lukeswitz/nerdle/issues"
   },
-  "homepage": "https://github.com/lukeswitz/wordguess#readme",
+  "homepage": "https://github.com/lukeswitz/nerdle#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
