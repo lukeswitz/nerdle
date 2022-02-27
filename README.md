@@ -1,10 +1,10 @@
 [![Publish](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml/badge.svg)](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml)
 <img src="https://img.shields.io/github/package-json/v/lukeswitz/nerdle" alt="GitHub package.json version" />
 
-**A Six-Letter Word 🧩 Game**
+**A Six-Letter Word Guessing 🧩 Game**
 
 - Game Modes: Play a new word daily, hourly or at your convenience. 
-- Private: No logging or data collected on this end, game data is stored in the browser.    
+- Private: You won't find Google Analytics in this version. Storage done on-device. 
 - Adaptive: Open an issue to add/remove words and with any other suggestions or bugs. 
  
 ### Nerdle Features
@@ -21,6 +21,4 @@
 ## Additional modes
 **Hourly mode**: A new word every hour.
 **Infinite mode**: A new word every time you refresh, for the true addicts.
-
-##### Credit to @MikhaD for the original repository
 
