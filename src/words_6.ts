@@ -845,7 +845,6 @@
 			"gangly",
 			"garage",
 			"garden",
-			"garish",
 			"garlic",
 			"garner",
 			"garnet",
