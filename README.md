@@ -1,5 +1,6 @@
 [![Publish](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml/badge.svg)](https://github.com/lukeswitz/nerdle/actions/workflows/publish.yml)
-<img src="https://img.shields.io/github/package-json/v/lukeswitz/nerdle" alt="GitHub package.json version" />
+<img src="https://img.shields.io/github/package-json/v/lukeswitz/nerdle" alt="GitHub package.json version" /> [![CodeQL](https://github.com/lukeswitz/nerdle/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/lukeswitz/nerdle/actions/workflows/codeql-analysis.yml)[![MobSF](https://github.com/lukeswitz/nerdle/actions/workflows/mobsf.yml/badge.svg)](https://github.com/lukeswitz/nerdle/actions/workflows/mobsf.yml)
+
 
 **A Six-Letter Word Guessing 🧩 Game**
 
