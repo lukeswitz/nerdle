@@ -3,7 +3,7 @@
 
 
 **A Six-Letter Word Guessing 🧩 Game**
-
+- Semi-curated dictionary
 - Game Modes: Play a new word daily, hourly or at your convenience. 
 - Private: You won't find Google Analytics in this version. Storage done on-device. 
 - Adaptive: Open an issue to add/remove words and with any other suggestions or bugs. 
@@ -19,7 +19,9 @@
 - The game mode is reflected in the url, allowing you to share a game directly. 
 - Easily downloaded as a progressive web app and run offline using the Share feature of most browsers. 
 
-## Additional modes
-**Hourly mode**: A new word every hour.
-**Infinite mode**: A new word every time you refresh, for the true addicts.
+## Gameplay Modes
+- **Daily mode**: A new word at **midnight**, fixed from the fork, as the original game is. 
+- **Hourly mode**: A new word every hour.
+- **Infinite mode**: A new word every time you refresh, for the true addicts.
 
+From the source repo github.com/MikhaD/wordle
