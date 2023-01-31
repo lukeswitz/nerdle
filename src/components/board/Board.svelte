@@ -93,6 +93,7 @@
 		width: min(130%, 100vw);
 	}
 	path {
+		opacity: 10%;
 		stroke: var(--bg-secondary);
 	}
 	.tutorial {
