@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "seedrandom": "^3.0.5",
-    "sirv-cli": "^2.0.2"
+    "sirv-cli": "^3.0.0"
   }
 }
